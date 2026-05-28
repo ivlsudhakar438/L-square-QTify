@@ -1,4 +1,5 @@
 .button {
+  font-family: "Poppins", sans-serif;
   color: var(--color-primary);
   background-color: var(--color-black);
   margin-right: 70px;
