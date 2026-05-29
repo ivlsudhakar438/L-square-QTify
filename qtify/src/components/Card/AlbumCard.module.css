@@ -1,0 +1,10 @@
+.album-card {
+  width: 225px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: var(--color-white);
+  color: var(--color-white);
+}
+.textLeft {
+  text-align:left;
+}

@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import TopAlbums from "./components/TopAlbums/TopAlbums";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <TopAlbums />
     </div>
   );
 }

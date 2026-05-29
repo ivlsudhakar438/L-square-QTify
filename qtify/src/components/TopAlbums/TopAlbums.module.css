@@ -1,0 +1,6 @@
+.topAlbums {
+  width: 95%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  margin: 0 auto;
+}

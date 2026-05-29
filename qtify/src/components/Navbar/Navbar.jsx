@@ -6,6 +6,9 @@ import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 
 function Navbar({ searchData }) {
+  const handleClick = () => {
+    console.log("handle this click");
+  }
   return (
     <nav className={styles.navbar}>
       <Link to="/">
@@ -15,7 +18,7 @@ function Navbar({ searchData }) {
         placeholder="Search a song of your choice"
         searchData={searchData}
       />
-      <Button style={{ marginRight: "100px" }}>Give Feedback</Button>
+      <Button handleClick={handleClick}>Give Feedback</Button>
     </nav>
   );
 }
