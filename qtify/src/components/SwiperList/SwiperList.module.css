@@ -2,15 +2,15 @@
   width: 95%;
   margin: 0px auto;  
 }
-.albumSwiper {
+.albumsSwiper {
   margin: 0;
 }
 .albumsSwiper :global(.swiper-button-prev) {
-  left: -6px;
+  left: -5px;
 }
 
 .albumsSwiper :global(.swiper-button-next) {
-  right: -6px;
+  right: -5px;
 }
 
 .albumsSwiper :global(.swiper-button-prev),
@@ -27,6 +27,7 @@
   font-size: 14px;
   font-weight: bold;
   color: var(--color-white);
+  /* display: none; */
 }
 
 
@@ -36,4 +37,8 @@
   height: 20px;
   padding: 0;
   color: #ffffff;
+}
+
+.albumsSwiper :global(.swiper-navigation-icon) {
+  pointer-events: auto !important;
 }
