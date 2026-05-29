@@ -7,7 +7,7 @@ import { Box, Chip  } from '@mui/material';
 const AlbumCard = ({album = null}) =>  {
   return album ? (<div>
     <Box sx={{
-      width: '220px',
+      width: '210px',
       height: '300px',
       margin: '25px 10px 2px 10px',
       borderRadius: 3,
@@ -36,12 +36,14 @@ const AlbumCard = ({album = null}) =>  {
 
           }}> 
           
-          <Chip label={album.follows} sx={{
-            color:'#ffffff',
-            backgroundColor: '#121212',
-            fontSize: '12px',
-            margin: '0 8px'
-          }} />
+          <Chip label={album.follows?`${album.follows} follows`:`${album.likes} likes` } 
+            sx={{
+              color:'#ffffff',
+              backgroundColor: '#121212',
+              fontSize: '12px',
+              margin: '0 8px'
+            }} 
+          />
           </Box>
         </div>
       {/* </div>  */}

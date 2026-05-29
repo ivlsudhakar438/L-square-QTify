@@ -5,6 +5,7 @@ const CompleteList = ({albums = []}) => {
   return (
     <Stack
       direction="row"
+      spacing={2}
       useFlexGap
       sx={{ flexWrap: 'wrap', padding:'20px', textAlign:'left' }}
     >

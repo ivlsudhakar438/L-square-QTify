@@ -4,7 +4,7 @@ import axios from "axios";
 
 import SwiperList from '../SwiperList/SwiperList';
 import CompleteList from '../CompleteList/CompleteList';
-import { Stack, Button } from '@mui/material';
+import { Stack, Button, Typography } from '@mui/material';
 
 
 const  NewAlbums = () => {
@@ -32,12 +32,18 @@ const  NewAlbums = () => {
         justifyContent: "space-between",
         alignItems: "center",
       }}>
-        <h3>New Albums</h3>
+        <Typography
+          variant="h4"
+          sx={{
+            color: "#ffffff",
+            fontWeight: 600,
+            mt: 2,
+            fontSize:"20px"
+          }}
+        >New Albums</Typography>
         <div>
           {
-            showAll
-              ? (<Button sx={{ color: '#34c94b'}} onClick={() => setShowAll(false)}>Collapse</Button>)
-              : (<Button sx={{ color: '#34c94b'}} onClick={() => setShowAll(true)}>Show All</Button>)
+            (<Button sx={{color: '#34c94b',fontSize:'18px', fontWeight:'600'}} onClick={() => setShowAll(!showAll)}>{showAll ? 'Collapse' : 'Show All'}</Button>)
           }
         </div>
       </Stack>

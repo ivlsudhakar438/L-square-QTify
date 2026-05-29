@@ -1,0 +1,14 @@
+.songsList {
+  width: 95%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  margin: 0 auto 30px;
+}
+
+/* .MuiTab-textColorPrimary {
+  color: #34c94b!important;
+}
+
+.Mui-selected {
+  color: #ff0000!important;
+} */
