@@ -1,4 +1,39 @@
-.swiper-list{ 
-  width: 100%;
-  margin: 10px auto;  
+.swiperList{ 
+  width: 95%;
+  margin: 0px auto;  
+}
+.albumSwiper {
+  margin: 0;
+}
+.albumsSwiper :global(.swiper-button-prev) {
+  left: -6px;
+}
+
+.albumsSwiper :global(.swiper-button-next) {
+  right: -6px;
+}
+
+.albumsSwiper :global(.swiper-button-prev),
+.albumsSwiper :global(.swiper-button-next) {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.albumsSwiper :global(.swiper-button-prev::after),
+.albumsSwiper :global(.swiper-button-next::after) {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+
+.albumsSwiper :global(.swiper-button-prev svg),
+.albumsSwiper :global(.swiper-button-next svg) {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  color: #ffffff;
 }

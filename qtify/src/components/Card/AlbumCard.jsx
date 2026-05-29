@@ -10,7 +10,7 @@ const AlbumCard = ({album = null}) =>  {
     <Box 
       sx={{
         height: '300px',
-        minWidth: '238px',
+        minWidth: '210px',
         margin: '10px 10px 8px 10px',
         borderRadius: 3,
         bgcolor: '#ffffff',

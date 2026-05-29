@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
-// import styles from './SwiperList.module.css';
+import styles from './SwiperList.module.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -25,11 +25,11 @@ const SwiperList = ({albums = []}) => {
           spaceBetween: 15,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 15,
         },
         1280: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 15,
         },
         1440: {
@@ -44,14 +44,13 @@ const SwiperList = ({albums = []}) => {
       navigation
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      className={styles.albumsSwiper}
     >
       {
         albums.map((album) => (
-          <SwiperSlide sx={{textAlign:'center'}}>
+          <SwiperSlide key={album.id}>
             <AlbumCard
-              key={album.id}
               album={album}
-              sx={{textAlign:'left' }}
             />
           </SwiperSlide>
         ))
