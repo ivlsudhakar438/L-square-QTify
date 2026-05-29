@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
-import styles from './SwiperList.module.css';
+// import styles from './SwiperList.module.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
