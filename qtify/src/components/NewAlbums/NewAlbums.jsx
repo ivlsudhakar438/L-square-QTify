@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import styles from "./TopAlbums.module.css";
+import styles from "./NewAlbums.module.css";
 import axios from "axios";
 
 import SwiperList from '../SwiperList/SwiperList';
@@ -7,18 +7,18 @@ import CompleteList from '../CompleteList/CompleteList';
 import { Stack, Button } from '@mui/material';
 
 
-const  TopAlbums = () => {
+const  NewAlbums = () => {
   const [albums, setAlbums] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
  useEffect(() => {
-    fetchTopAlbums();
+    fetchNewAlbums();
   }, []);
 
-  const fetchTopAlbums = async () => {
+  const fetchNewAlbums = async () => {
     try {
       const response = await axios.get(
-        "https://qtify-backend.labs.crio.do/albums/top"
+        "https://qtify-backend.labs.crio.do/albums/new"
       );
       setAlbums(response.data);
     } catch (error) {
@@ -27,12 +27,12 @@ const  TopAlbums = () => {
   }
 
   return (
-    <div className={styles.topAlbums}>
+    <div className={styles.newAlbums}>
       <Stack direction="row" sx={{
         justifyContent: "space-between",
         alignItems: "center",
       }}>
-        <h3>Top Albums</h3>
+        <h3>New Albums</h3>
         <div>
           {
             showAll
@@ -49,4 +49,4 @@ const  TopAlbums = () => {
     </div>
   );
 }
-export default TopAlbums;
+export default NewAlbums;

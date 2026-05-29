@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import TopAlbums from "./components/TopAlbums/TopAlbums";
+import NewAlbums from "./components/NewAlbums/NewAlbums";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <TopAlbums />
+      <NewAlbums />
     </div>
   );
 }
