@@ -1,6 +1,7 @@
 .newAlbums {
   width: 95%;
+  min-height: 50px;
   background-color: var(--color-black);
   color: var(--color-white);
-  margin: 0 auto 30px;
+  margin: 40px auto 40px;
 }

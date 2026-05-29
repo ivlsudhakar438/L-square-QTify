@@ -31,13 +31,13 @@ const  NewAlbums = () => {
       <Stack direction="row" sx={{
         justifyContent: "space-between",
         alignItems: "center",
+        margin: '0 0 10px 0'
       }}>
         <Typography
           variant="h4"
           sx={{
             color: "#ffffff",
             fontWeight: 600,
-            mt: 2,
             fontSize:"20px"
           }}
         >New Albums</Typography>

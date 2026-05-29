@@ -10,15 +10,44 @@ const SwiperList = ({albums = []}) => {
   return (
     <Swiper
       modules={[Navigation, A11y]}
-      spaceBetween={0}
-      slidesPerView={7}
+      spaceBetween={5}
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1280: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+        1440: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+        1536: {
+          slidesPerView: 7,
+          spaceBetween: 24,
+        },
+      }}
       navigation
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
       {
         albums.map((album) => (
-          <SwiperSlide sx={{textAlign:'left' }}>
+          <SwiperSlide sx={{textAlign:'center'}}>
             <AlbumCard
               key={album.id}
               album={album}

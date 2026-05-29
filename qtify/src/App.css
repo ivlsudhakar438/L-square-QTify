@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
 }
 
 .App-logo {
@@ -15,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #121212;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

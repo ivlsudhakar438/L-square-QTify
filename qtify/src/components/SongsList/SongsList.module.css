@@ -1,14 +1,25 @@
 .songsList {
   width: 95%;
+  min-height: 50px;
   background-color: var(--color-black);
   color: var(--color-white);
-  margin: 0 auto 30px;
+  margin: 40px auto 40px;
 }
 
-/* .MuiTab-textColorPrimary {
-  color: #34c94b!important;
+.genreTabs {
+  min-height: 48px;
 }
 
-.Mui-selected {
-  color: #ff0000!important;
-} */
+.genreTab {
+  color: #ffffff !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  min-height: 48px !important;
+  /* margin-bottom: 20px; */
+}
+
+.genreTab.Mui-selected {
+  color: #ffffff !important;
+}

@@ -71,7 +71,7 @@ const SongsList = () => {
           sx={{
             color: "#ffffff",
             fontWeight: 600,
-            mt: 2,
+            margin: '0 0 10px 0',
             fontSize:"20px"
           }}
         >Songs</Typography>
@@ -81,18 +81,26 @@ const SongsList = () => {
         <Tabs 
           value={genre} 
           onChange={handleChange} 
+          className={styles.genreTabs}
+          sx={{
+            "& .MuiTabs-indicator": {
+              backgroundColor: "#34C94B",
+              height: "4px",
+              borderRadius: "2px",
+            },
+          }}
           variant="scrollable" 
           scrollButtons="auto" 
           aria-label="scrollable auto tabs example"
         >
-          <Tab value={'all'} label="All" sx={{color:'#FFFFFF'}} />
+          <Tab value={'all'} label="All" className={styles.genreTab} />
           {
             genres.length ? genres.map((item, index) => (
               <Tab
                 key={index}
                 value={item.key}
                 label={item.label}
-                sx={{color:'#FFFFFF'}}
+                className={styles.genreTab}
               />
             )) : ""
           }
