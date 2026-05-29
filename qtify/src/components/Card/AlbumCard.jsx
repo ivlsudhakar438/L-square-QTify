@@ -1,7 +1,7 @@
 
 import React from "react"; 
 import styles from "./AlbumCard.module.css";
-import { Box,CardMedia, Chip  } from '@mui/material';
+import { Box, Chip  } from '@mui/material';
 
 
 const AlbumCard = ({album = null}) =>  {

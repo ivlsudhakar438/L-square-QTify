@@ -1,4 +1,4 @@
-import { Stack, Button, Box } from '@mui/material';
+import { Stack } from '@mui/material';
 import AlbumCard from "../Card/AlbumCard";
 
 const CompleteList = ({albums = []}) => {
